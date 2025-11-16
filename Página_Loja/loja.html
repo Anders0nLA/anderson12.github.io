@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja - ZenFlow</title>
+  <link rel="stylesheet" href="Styleloja.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-content">
+    <div class="logo">
+      <img src="../imagens/Zenflow.png" alt="Logo ZenFlow">
+      <span>ZenFlow</span>
+    </div>
+
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="../Site_Main/index.html">Voltar ao Site</a></li>
+        <li><a href="#produtos">Kits</a></li>
+        <li><a href="#carrinho">Carrinho</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <h2>Kits de Automação</h2>
+
+      <div class="grid-produtos">
+
+        <div class="card">
+          <h3>Kit Automação Empresarial</h3>
+          <p>Sistema completo para processos internos.</p>
+          <span class="preco">R$ 199,90</span>
+          <button class="btn adicionar" data-nome="Kit Automação Empresarial" data-preco="199.90">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="card">
+          <h3>Kit Automação para Clínicas</h3>
+          <p>Agendamentos e automação de fluxos.</p>
+          <span class="preco">R$ 249,90</span>
+          <button class="btn adicionar" data-nome="Kit Automação para Clínicas" data-preco="249.90">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="card">
+          <h3>Kit Automação Financeira</h3>
+          <p>Controle de pagamentos, cobranças e relatórios.</p>
+          <span class="preco">R$ 179,90</span>
+          <button class="btn adicionar" data-nome="Kit Automação Financeira" data-preco="179.90">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="carrinho" id="carrinho">
+    <div class="container">
+      <h2>Seu Carrinho</h2>
+
+      <div id="lista-carrinho" aria-live="polite"></div>
+
+      <div class="total">
+        Total: <span id="total">R$ 0,00</span>
+      </div>
+
+      <div class="acoes-carrinho">
+        <button id="limpar" class="btn btn-light">Limpar Carrinho</button>
+        <button id="finalizar" class="btn">Finalizar Compra</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <div class="footer-column">
+      <h3>ZenFlow</h3>
+      <p>Soluções modernas em automação de processos.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="../Site_Main/index.html">Home</a></li>
+        <li><a href="#produtos">Kits</a></li>
+        <li><a href="#carrinho">Carrinho</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contato</h3>
+      <ul>
+        <li><i class="fas fa-phone"></i> (75) 9 9164-1956</li>
+        <li><i class="fas fa-envelope"></i> zenflowautomacoes@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="scriptloja.js" defer></script>
+</body>
+</html>

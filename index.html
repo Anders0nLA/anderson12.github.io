@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZenFlow - Soluções em Automação</title>
+  <link rel="icon" type="image/jpeg" href="../imagens/file.jpg">
+  <meta name="description" content="ZenFlow - Automatize processos, integre sistemas e aumente a produtividade da sua empresa com soluções modernas.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-content">
+    <div class="logo">
+      <img src="../imagens/Zenflow.png" alt="Logo ZenFlow">
+      <span>ZenFlow</span>
+    </div>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Recursos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="../Página_Loja/loja.html" class="loja-link">Loja</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Automação de Processos</h1>
+    <p>A ZenFlow ajuda sua empresa a crescer com automação inteligente e integrações modernas.</p>
+    <a href="#features" class="btn">Saiba Mais</a>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="container">
+    <h2>O que oferecemos</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-project-diagram"></i>
+        <h3>Workflows Visuais</h3>
+        <p>Monte processos de forma simples com interface intuitiva.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-plug"></i>
+        <h3>Integrações</h3>
+        <p>Conecte diversos aplicativos e plataformas em poucos cliques.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Segurança</h3>
+        <p>Proteção de dados e acessos seguros para sua tranquilidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="container">
+    <h2>Sobre a ZenFlow</h2>
+    <p>A Zenflow é uma empresa criada e aprimorada para automações de empresas, clínicas e diversos segmentos que buscam eficiência. Nosso propósito é transformar processos manuais em soluções digitais inteligentes, trazendo mais produtividade, redução de custos e melhor experiência para seus clientes. Atuamos com foco em inovação, segurança e resultados reais, desenvolvendo automações sob medida para cada necessidade. Se você busca escalar seu negócio e otimizar o tempo da sua equipe, a Zenflow é a parceira certa para conduzir sua transformação digital.</p>
+  </div>
+</section>
+
+<div class="btn-loja-container">
+  <a href="../Página_Loja/loja.html" class="btn-loja">🛒 Ir para a Loja</a>
+</div>
+
+<section class="cta" id="contato">
+  <div class="container">
+    <h2>Entre em contato</h2>
+    <p>Quer saber como a ZenFlow pode ajudar sua empresa? Fale com a gente!</p>
+    <a href="https://wa.me/5575991641956" class="btn btn-light" target="_blank" rel="noopener noreferrer">Solicitar Demonstração</a>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="form-group">
+        <label for="nome">Nome Completo *</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="documento">CPF ou CNPJ *</label>
+        <input type="text" id="documento" name="documento" placeholder="000.000.000-00 ou 00.000.000/0000-00" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone *</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(75) 99999-9999" required>
+      </div>
+
+      <div class="form-group">
+        <label for="automacao">Qual automação você busca? *</label>
+        <select id="automacao" name="automacao" required>
+          <option value="">Selecione uma opção...</option>
+          <option value="empresas">Automação para Empresas</option>
+          <option value="clinicas">Automação para Clínicas</option>
+          <option value="financeiro">Automação Financeira</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Enviar</button>
+      <div id="form-message" aria-live="polite" style="margin-top:12px;"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-content">
+    <div class="footer-column">
+      <h3>ZenFlow</h3>
+      <p>Soluções modernas em automação de processos.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Recursos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contato</h3>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> Av. Fraga Maia, n°9, BA.</li>
+        <li><i class="fas fa-phone"></i> (75) 9 9164-1956</li>
+        <li><i class="fas fa-envelope"></i> zenflowautomacoes@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2025 ZenFlow - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
