@@ -86,3 +86,38 @@ form.addEventListener("submit", (e) => {
 Object.values(campos).forEach(campo => {
   campo.addEventListener("blur", validar);
 });
+
+const cepInput = document.getElementById("cep");
+const endereco = document.getElementById("endereco");
+const bairro = document.getElementById("bairro");
+const cidade = document.getElementById("cidade");
+const uf = document.getElementById("uf");
+
+cepInput.addEventListener("blur", () => {
+  let cep = cepInput.value.replace(/\D/g, "");
+
+  if (cep.length !== 8) {
+    alert("CEP inválido. Digite apenas números.");
+    return;
+  }
+
+  fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    .then(r => r.json())
+    .then(data => {
+
+      if (data.erro) {
+        alert("CEP não encontrado!");
+        return;
+      }
+
+      // preencher os campos automaticamente
+      endereco.value = data.logradouro;
+      bairro.value = data.bairro;
+      cidade.value = data.localidade;
+      uf.value = data.uf;
+    })
+    .catch(() => {
+      alert("Erro ao consultar CEP.");
+    });
+});
+
